@@ -1,0 +1,23 @@
+server:
+  port: 3000
+
+mybatis:
+  type-aliases-package: com.example.demo.model
+  mapper-locations: classpath:mapper/*.xml
+
+spring:
+  mvc:
+    view:
+      prefix: classpath:/templates/
+      suffix: .ftl .html
+#  datasource:
+#    #基本属性
+#    url: jdbc:postgresql://localhost:5432/tutorial?useSSL=false
+#    username: postgres
+#    password: cxb123456
+#    driver-class-name: org.postgresql.Driver
+
+
+
+
+
