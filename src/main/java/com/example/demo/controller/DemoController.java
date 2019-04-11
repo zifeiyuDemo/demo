@@ -18,7 +18,6 @@ public class DemoController {
     @RequestMapping("/index")
     public String home(Model model){
         model.addAttribute("message", "hello");
-        log.info("model:{}", model);
         return "index";
     }
 

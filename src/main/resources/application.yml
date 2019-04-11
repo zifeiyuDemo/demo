@@ -6,18 +6,18 @@ mybatis:
   mapper-locations: classpath:mapper/*.xml
 
 spring:
-  mvc:
-    view:
-      prefix: classpath:/templates/
-      suffix: .ftl .html
-#  datasource:
-#    #基本属性
-#    url: jdbc:postgresql://localhost:5432/tutorial?useSSL=false
-#    username: postgres
-#    password: cxb123456
-#    driver-class-name: org.postgresql.Driver
-
-
-
-
-
+  #配置热部署
+  devtools:
+    restart:
+      enabled: true
+      additional-paths: src/main/java
+  thymeleaf:
+    mode: HTML5
+    encoding: UTF-8
+    cache: false
+  datasource:
+    #基本属性
+    url: jdbc:postgresql://localhost:5432/tutorial?useSSL=false
+    username: postgres
+    password: cxb123456
+    driver-class-name: org.postgresql.Driver
